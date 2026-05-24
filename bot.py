@@ -833,7 +833,7 @@ def main():
 
     app.post_init = on_startup
 
-    logger.info(f"Bot started | model: {OLLAMA_MODEL} | channels: {ALLOWED_CHANNELS}")
+    logger.info(f"Bot started | channels: {ALLOWED_CHANNELS}")
     app.run_polling(drop_pending_updates=True)
 
 
